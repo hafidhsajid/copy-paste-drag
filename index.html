@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="box">
+        <form action="#" id="sendForm">
+            <div id="drop-area">
+                <label for="fileElem">
+                    <input type="file" name="News[image]" id="fileElem" onchange="handleFiles(this.files)">
+                    <div class="uploadIcon">
+                        <i class="fa fa-upload fa-4x" aria-hidden="true"></i>
+                    </div>
+                    <div id="gallery">
+
+                    </div>
+                </label>
+                <div class="controll-panel">
+                    <div class="item">
+                        <div id="save-image"><i class="fa fa-floppy-o" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="item">
+                        <div id="delete-image"><i class="fa fa-trash" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="areapaste">
+                <input placeholder="drag or ctrl + v" id="text" type="text">
+            </div>
+        </form>
+    </div>
+
+    <div id="details_img">
+        <div class="list">
+            <div class="item">
+                <div class="attr">Name</div>
+                <div class="data" id="nameImage">(not set)</div>
+            </div>
+            <div class="item">
+                <div class="attr">Size</div>
+                <div class="data" id="sizeImage">(not set)</div>
+            </div>
+            <div class="item">
+                <div class="attr">Type</div>
+                <div class="data" id="typeImage">(not set)</div>
+            </div>
+            <div class="item">
+                <div class="attr">Last Modifi time</div>
+                <div class="data" id="timemodifiImage">(not set)</div>
+            </div>
+            <div class="item">
+                <div class="attr">Last modifi date</div>
+                <div class="data" id="datemodifiImage">(not set)</div>
+            </div>
+        </div>
+    </div>
+    <div id="container-image">
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</html>
